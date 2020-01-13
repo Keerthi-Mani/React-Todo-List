@@ -45,7 +45,7 @@ class App extends Component {
     return (
       <div className="container">
         <div className="header">React Todo Application</div>
-
+        {notes}
         <div className="btn" onClick={this.addNote.bind(this)}>
           +
         </div>
@@ -57,7 +57,7 @@ class App extends Component {
           }}
           className="textInput"
           value={this.state.noteText}
-          onChangeText={noteText => this.updateNoteText(noteText)}
+          onChange={noteText => this.updateNoteText(noteText)}
           onKeyPress={this.handleKeyPress.bind(this)}
         />
       </div>
