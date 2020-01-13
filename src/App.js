@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import Note from "./components/Note";
 import "./App.css";
+
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      noteText: ""
+      noteText: "",
+      notes: []
     };
   }
 
